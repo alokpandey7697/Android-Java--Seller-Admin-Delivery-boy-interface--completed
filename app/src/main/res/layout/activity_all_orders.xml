@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sellers.all_orders"
+    android:layout_gravity="center_vertical"
+    >
+
+    <Button
+        android:id="@+id/seller_pending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pending"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15sp"
+        />
+
+    <Button
+        android:id="@+id/seller_accepted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accepted"
+        android:layout_margin="15sp"
+
+        android:background="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_pending" />
+
+    <Button
+        android:id="@+id/seller_rejected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rejected"
+        android:layout_margin="15sp"
+
+        android:background="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_accepted" />
+
+    <Button
+        android:id="@+id/seller_delivered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delivered"
+        android:layout_margin="15sp"
+
+        android:background="@color/black"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_rejected" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

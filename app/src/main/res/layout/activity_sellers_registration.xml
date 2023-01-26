@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Sellers.SellersRegistrationActivity">
+
+        <ImageView
+            android:id="@+id/shop_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/app_bar_settings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/shop_24" />
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/upload"
+            android:layout_toStartOf="@id/shop_image_text"
+            android:src="@drawable/upload"
+            android:layout_alignTop="@id/shop_image_text"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/shop_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_image"
+
+            android:layout_marginTop="11dp"
+
+            android:text="Upload Shop Image"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/title_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/shop_image_text"
+            android:text="Seller registration form"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            />
+
+
+        <EditText
+            android:id="@+id/seller_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/title_seller"
+            android:hint="Name..."
+            android:inputType="text"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/seller_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/seller_name"
+            android:hint="Phone..."
+            android:inputType="number"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/seller_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/seller_phone"
+            android:hint="Email..."
+            android:inputType="textEmailAddress"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/seller_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/seller_email"
+            android:hint="Password..."
+            android:inputType="text"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/seller_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/seller_password"
+            android:hint="Category..."
+            android:inputType="text"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sellerLoc"
+            android:background="@drawable/ic_my_location"
+            android:layout_below="@id/seller_category" />
+
+        <EditText
+            android:id="@+id/seller_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seller_category"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toEndOf="@+id/sellerLoc"
+            android:layout_toRightOf="@id/sellerLoc"
+            android:hint="Shop- Bussiness Address..."
+            android:inputType="text"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/seller_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/seller_address"
+            android:background="@android:color/white"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+
+            />
+        <Button
+            android:id="@+id/seller_already_account_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="15dp"
+            android:text="Already have an account?"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_below="@id/seller_register_btn"
+            />
+    </RelativeLayout>
+</ScrollView>
